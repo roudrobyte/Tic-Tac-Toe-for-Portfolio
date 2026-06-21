@@ -1,0 +1,53 @@
+:root {
+  --font-display: 'Space Grotesk', sans-serif;
+}
+
+.cell {
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 75px;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+#gameContainer {
+  font-family: var(--font-display);
+  text-align: center;
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: 20px auto;
+}
+
+.restartBtn {
+  background-color: #f3f3f3;
+  border: 3px solid #000000;
+  color: #000000;
+  padding: 12px 36px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 8px 8px 0px 0px #000000;
+  transition: all 0.1s ease-in-out;
+}
+
+.restartBtn:hover {
+  background-color: #ffffff;
+}
+
+.restartBtn:active {
+  transform: translate(8px, 8px);
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+
+#statusText {
+  margin: 10px 0;
+}
